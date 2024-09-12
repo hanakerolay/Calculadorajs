@@ -10,20 +10,54 @@
     <title>Calculadora</title>
 </head>
 <body>
-    <h1>Calcular Retângulo</h1>
-    <input type="number" nome="raio" id="raio" placeholder="Digite o valor do raio">
-    <button onclick="calcAreaCirculo()">Calcular</button>
-    <p is="area"></p>
+    <h1>calcular as áreas</h1>
+    <br>
+    <h2>Calcular area do Retângulo</h2>
+    <input type="number" name="baseret" id="baseret" placeholder="Digite o valor da base">
+    <input type="number" name="alturaret" id="alturaret" placeholder="Digite o valor da altura">
+    <button onclick="retagulo()">Calcular</button>
+    <p id="areadoretangulo"></p>
     <br>
     <br>
-    <h1>Somar area Triângulo </h1>
-    <imput type="number" name="n1" id="n1" placeholder="Digite o valor do primeiro números">
-    <input type="number" name="n2" id="n2" placeholder="Digite o valor do segundo números">
-    <button onclick="soma()">Calcular</button>
-    <p id="soma"></p>
+    <h2>Calcular area do Triângulo</h2>
+    <input type="number" name="basetri" id="basetri" placeholder="Digite o valor da base">
+    <input type="number" name="altura" id="altura" placeholder="Digite o valor da altura">
+    <button onclick="triangulo()">Calcular</button>
+    <p id="areadotriangulo"></p>
     <br>
     <br>
-    <h1>Somar </h1>
+    <h2>Calcular area do Losango</h2>
+    <input type="number" name="diagonalmaior" id="diagonalmaior" placeholder="Digite o valor da diagonal maior">
+    <input type="number" name="diagonalmenor" id="diagonalmenor" placeholder="Digite o valor da diagonal menor">
+    <button onclick="losango()">Calcular</button>
+    <p id="areadodiagonal"></p>
+    <br>
+    <br>
+    <h2>Calcular area do Trapézio</h2>
+    <input type="number" name="basemaior" id="basemaior" placeholder="Digite o valor da base maior">
+    <input type="number" name="basemenor" id="basemenor" placeholder="Digite o valor da base menor">
+    <input type="number" name="alturatrap" id="alturatrap" placeholder="Digite o valor da altura">
+    <button onclick="trapezio()">Calcular</button>
+    <p id="areadotrapezio"></p>
+    <br>
+    <br>
+    <h1>calcular os volumes</h1>
+    <br>
+    <h2>Calcular area do cubo</h2>
+    <input type="number" name="basecubo" id="basecubo" placeholder="Digite o valor da base">
+    <button onclick="cubo()">Calcular</button>
+    <p id="areadocubo"></p>
+    <br>
+    <br>
+    <h2>Calcular area do Paralelepípedo</h2>
+    <input type="number" name="lado" id="ladoA" placeholder="Digite o valor da ladoA">
+    <input type="number" name="lado" id="ladoB" placeholder="Digite o valor da ladoB">
+    <input type="number" name="lado" id="ladoC" placeholder="Digite o valor da ladoC">
+    <button onclick="paralelepípedo()">Calcular</button>
+    <p id="areadoparalelepípedo"></p>
+    <br>
+    <br>
+
 
 </body>
 </html>
