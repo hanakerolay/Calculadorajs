@@ -36,7 +36,7 @@ function cubo() {
     document.getElementById("areadocubo").innerText = areadocubo
 }
 
-function trapezio() {
+function paralelepípedo() {
     let ladoA = Number(document.getElementById("ladoA").value)
     let ladoB = Number(document.getElementById("ladoB").value)
     let ladoC = Number(document.getElementById("ladoC").value)
@@ -44,5 +44,33 @@ function trapezio() {
     console.log(ladoB)
     console.log(ladoC)
     let areadoparalelepípedo = ladoA * ladoB * ladoC
-    document.getElementById("areadotrapezio").innerText = areadoparalelepípedo
+    document.getElementById("areadoparalelepípedo").innerText = areadoparalelepípedo
+}
+
+function calcAreaesfera() {
+    let raio = document.getElementById("raio").value
+    const pi = 3.14
+    let calcAreaesfera = pi * raio**2 *1.3 
+    document.getElementById("calcAreaesfera").innerText = calcAreaesfera
+}
+
+function calcAreaCilindro() {
+    let raio = document.getElementById("raio").value
+    const pi = 3.14
+    let calcAreaCilindro = pi * raio**2 *altura
+    document.getElementById("calcAreaCilindro").innerText = calcAreaCilindro
+}
+
+function calcAreaCone() {
+    let raio = document.getElementById("raio").value
+    const pi = 3.14
+    let calcAreaCone = pi * raio**2 *altura
+    document.getElementById("calcAreaCone").innerText = calcAreaCone
+}
+
+function areadapirâmide() {
+    let ladopira= Number(document.getElementById("ladopira").value)
+    let alturapira = Number(document.getElementById("alturapira").value)
+    let areadapirâmide = (ladopira**2 * alturapira)/3
+    document.getElementById("areadapirâmide").innerText = areadapirâmide
 }
