@@ -76,12 +76,10 @@ function piramide() {
 }
 
 function segungrau() {
-    let a = Number(document.getElementById("a").value)
-    let b = Number(document.getElementById("b").value)
-    let c = Number(document.getElementById("c").value)
-    console.log(a)
-    console.log(b)
-    console.log(c)
-    let segungrau = a**2 - b + c
-    document.getElementById("segungrau").innerText = segungrau
+    let volume1 = Number(document.getElementById("volume1").value)
+    let volume2  = Number(document.getElementById("volume2").value)
+    let valor = Number(document.getElementById("valor").value)
+    
+    let Delta = volume1**2 - volume2 + valor
+    document.getElementById("Delta").innerText = Delta
 }
