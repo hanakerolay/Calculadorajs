@@ -6,16 +6,16 @@ function retagulo() {
 }
 
 function triangulo() {
-    let base = Number(document.getElementById("basetri").value)
-    let altura = Number(document.getElementById("altura").value)
-    let areadotriangulo = (base * altura)/2
+    let basetria = Number(document.getElementById("basetria").value)
+    let alturatria = Number(document.getElementById("alturatria").value)
+    let areadotriangulo = (basetria * alturatria)/2
     document.getElementById("areadotriangulo").innerText = areadotriangulo
 }
 
 function losango() {
-    let base = Number(document.getElementById("diagonalmaior").value)
-    let altura = Number(document.getElementById("diagonalmenor").value)
-    let areadodiagonal = (base * altura)/2
+    let diagonalmaior = Number(document.getElementById("diagonalmaior").value)
+    let diagonalmenor = Number(document.getElementById("diagonalmenor").value)
+    let areadodiagonal = (diagonalmaior * diagonalmenor)/2
     document.getElementById("areadodiagonal").innerText = areadodiagonal
 }
 
@@ -68,9 +68,20 @@ function calcAreaCone() {
     document.getElementById("calcAreaCone").innerText = calcAreaCone
 }
 
-function areadapirâmide() {
-    let ladopira= Number(document.getElementById("ladopira").value)
+function piramide() {
+    let ladopiram= Number(document.getElementById("ladopiram").value)
     let alturapira = Number(document.getElementById("alturapira").value)
-    let areadapirâmide = (ladopira**2 * alturapira)/3
-    document.getElementById("areadapirâmide").innerText = areadapirâmide
+    let areadapiramide = (ladopiram**2 * alturapira)/3
+    document.getElementById("areadapiramide").innerText = areadapiramide
+}
+
+function segungrau() {
+    let a = Number(document.getElementById("a").value)
+    let b = Number(document.getElementById("b").value)
+    let c = Number(document.getElementById("c").value)
+    console.log(a)
+    console.log(b)
+    console.log(c)
+    let segungrau = a**2 - b + c
+    document.getElementById("segungrau").innerText = segungrau
 }
