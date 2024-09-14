@@ -5,93 +5,135 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Imposta arquivo de script -->
     <script src="js/script.js" type="text/javascript" defer></script>
+    <!-- Imposta arquivo de bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <!-- Imposta folha de estilo -->
     <link rel="Stylesheet" href="css/style.css">
     <title>Calculadora</title>
 </head>
 <body>
-    <h1>calcular as áreas</h1>
-    <br>
-    <h2>Calcular area do Retângulo</h2>
-    <input type="number" name="baseret" id="baseret" placeholder="Digite o valor da base">
-    <input type="number" name="alturaret" id="alturaret" placeholder="Digite o valor da altura">
-    <button onclick="retagulo()">Calcular</button>
-    <p id="areadoretangulo"></p>
-    <br>
-    <br>
-    <h2>Calcular area do Triângulo</h2>
-    <input type="number" name="basetria" id="basetria" placeholder="Digite o valor da base">
-    <input type="number" name="alturatria" id="alturatria" placeholder="Digite o valor da altura">
-    <button onclick="triangulo()">Calcular</button>
-    <p id="areadotriangulo"></p>
-    <br>
-    <br>
-    <h2>Calcular area do Losango</h2>
-    <input type="number" name="diagonalmaior" id="diagonalmaior" placeholder="Digite o valor da diagonal maior">
-    <input type="number" name="diagonalmenor" id="diagonalmenor" placeholder="Digite o valor da diagonal menor">
-    <button onclick="losango()">Calcular</button>
-    <p id="areadodiagonal"></p>
-    <br>
-    <br>
-    <h2>Calcular area do Trapézio</h2>
-    <input type="number" name="basemaior" id="basemaior" placeholder="Digite o valor da base maior">
-    <input type="number" name="basemenor" id="basemenor" placeholder="Digite o valor da base menor">
-    <input type="number" name="alturatrap" id="alturatrap" placeholder="Digite o valor da altura">
-    <button onclick="trapezio()">Calcular</button>
-    <p id="areadotrapezio"></p>
-    <br>
-    <br>
-    <h1>calcular os volumes</h1>
-    <br>
-    <h2>Calcular area do cubo</h2>
-    <input type="number" name="basecubo" id="basecubo" placeholder="Digite o valor da base">
-    <button onclick="cubo()">Calcular</button>
-    <p id="areadocubo"></p>
-    <br>
-    <br>
-    <h2>Calcular area do Paralelepípedo</h2>
-    <input type="number" name="lado" id="ladoA" placeholder="Digite o valor da ladoA">
-    <input type="number" name="lado" id="ladoB" placeholder="Digite o valor da ladoB">
-    <input type="number" name="lado" id="ladoC" placeholder="Digite o valor da ladoC">
-    <button onclick="paralelepípedo()">Calcular</button>
-    <p id="areadoparalelepípedo"></p>
-    <br>
-    <br>
-    <h2>Calcular área da Esfera</h2>
-    <input type="number" id="esfera" placeholder="Digite o valor do raio">
-    <button onclick="calcAreaesfera()">Calcular</button>
-    <p id="calcAreaesfera"></p>
-    <br>
-    <br>
-    <h2>Calcular o Volume do Cilindro</h2>
-    <input type="number" id="raioCilin" placeholder="Digite o valor do raio">
-    <input type="number" id="alturaCilin" placeholder="Digite o valor da altura">
-    <button onclick="calcAreaCilindro()">Calcular</button>
-    <p id="AreaCilin"></p>
-    <br>
-    <br>
-    <h2>Calcular area do Cone</h2>
-    <input type="number" id="raiocon" placeholder="Digite o valor do raio">
-    <input type="number" id="alturacon" placeholder="Digite o valor da altura">
-    <button onclick="calcAreaCone()">Calcular</button>
-    <p id="AreaCone"></p>
-    <br>
-    <br>
-    <h2>Calcular o Volume da Pirâmide</h2>
-    <input type="number" id="ladopiram" placeholder="Digite o valor do lado da base">
-    <input type="number" id="alturapira" placeholder="Digite o valor da altura">
-    <button onclick="piramide()">Calcular</button>
-    <p id="areapiramide"></p>
-    <br>
-    <br>
-    <h1>Calculadora de Equação do Segundo Grau</h1>
-    <input type="number" id="A1" placeholder="valor a">
-    <input type="number" id="B1" placeholder="valor b">
-    <input type="number" id="C1" placeholder="valor c">
-
-    <button onclick="segundograu()">Calcular</button>
-    <p id="segundograu"></p>
-    <br>
-    <br>
+    <div class="container1">
+        <h1 class="tit">calculadora (áreas)</h1>
+    </div>
+    <div class="fundo">
+        <div class="container2">
+            <div class="row">
+                <div class="col-1"></div>
+                <div class="col">
+                    <h2>Calcular area do Retângulo</h2>
+                    <input type="number" name="baseret" id="baseret" placeholder="Digite o valor da base">
+                    <input type="number" name="alturaret" id="alturaret" placeholder="Digite o valor da altura">
+                    <button type="button" class="btn btn-secondary rounded-pill" onclick="retagulo()">Calcular</button>
+                   
+                    <p id="areadoretangulo"></p>
+                </div>
+    
+                <div class="col">
+                    <h2>Calcular area do Triângulo</h2>
+                    <input type="number" name="basetria" id="basetria" placeholder="Digite o valor da base">
+                    <input type="number" name="alturatria" id="alturatria" placeholder="Digite o valor da altura">
+                    <button type="button" class="btn btn-secondary rounded-pill" onclick="triangulo()">Calcular</button>
+                    <p id="areadotriangulo"></p>
+                </div>
+                     
+            </div> 
+       
+       
+            <div class="row">
+                <div class="col-1"></div>
+                <div class="col">
+                    <h2>Calcular area do Losango</h2>
+                    <input type="number" name="diagonalmaior" id="diagonalmaior" placeholder="Digite o valor da diagonal maior">
+                    <input type="number" name="diagonalmenor" id="diagonalmenor" placeholder="Digite o valor da diagonal menor">
+                    <button type="button" class="btn btn-secondary rounded-pill" onclick="losango()">Calcular</button>
+                    <p id="areadodiagonal"></p>
+                </div>
+                <div class="col">
+                        <h2>Calcular area do Trapézio</h2>
+                        <input type="number" name="basemaior" id="basemaior" placeholder="Digite o valor da base maior">
+                        <input type="number" name="basemenor" id="basemenor" placeholder="Digite o valor da base menor">
+                        <input type="number" name="alturatrap" id="alturatrap" placeholder="Digite o valor da altura">
+                        <button type="button" class="btn btn-secondary rounded-pill" onclick="trapezio()">Calcular</button>
+                        <p id="areadotrapezio"></p>
+                </div>
+               
+            </div>
+    </div>
+    
+           
+        <div class="container1">
+            <h1>calculadora (volumes)</h1>
+        </div>
+        <div class="fundo">
+            <div class="container2">
+                <div class="row">
+                    <div class="col-1"></div>
+                    <div class="col">
+                        <h2>Calcular area do cubo</h2>
+                        <input type="number" name="basecubo" id="basecubo" placeholder="Digite o valor da base">
+                        <button type="button" class="btn btn-secondary rounded-pill" onclick="cubo()">Calcular</button>
+                        <p id="areadocubo"></p>
+                    </div>
+                    <div class="col">
+                        <h2>Calcular area do Paralelepípedo</h2>
+                        <input type="number" name="lado" id="ladoA" placeholder="Digite o valor da ladoA">
+                        <input type="number" name="lado" id="ladoB" placeholder="Digite o valor da ladoB">
+                        <input type="number" name="lado" id="ladoC" placeholder="Digite o valor da ladoC">
+                        <button type="button" class="btn btn-secondary rounded-pill" onclick="paralelepípedo()">Calcular</button>
+                        <p id="areadoparalelepípedo"></p>
+                    </div>
+                    
+                </div>
+                <div class="row">
+                    <div class="col-1"></div>
+                    <div class="col">
+                        <h2>Calcular área da Esfera</h2>
+                        <input type="number" id="esfera" placeholder="Digite o valor do raio">
+                        <button type="button" class="btn btn-secondary rounded-pill" onclick="calcAreaesfera()">Calcular</button>
+                        <p id="calcAreaesfera"></p>
+                    </div>
+                    <div class="col">
+                        <h2>Calcular o Volume do Cilindro</h2>
+                        <input type="number" id="raioCilin" placeholder="Digite o valor do raio">
+                        <input type="number" id="alturaCilin" placeholder="Digite o valor da altura">
+                        <button type="button" class="btn btn-secondary rounded-pill" onclick="calcAreaCilindro()">Calcular</button>
+                        <p id="AreaCilin"></p>
+                    </div>
+                    
+                </div>
+                <div class="row">
+                    <div class="col-1"></div>
+                    <div class="col">
+                        <h2>Calcular area do Cone</h2>
+                        <input type="number" id="raiocon" placeholder="Digite o valor do raio">
+                        <input type="number" id="alturacon" placeholder="Digite o valor da altura">
+                        <button type="button" class="btn btn-secondary rounded-pill" onclick="calcAreaCone()">Calcular</button>
+                        <p id="AreaCone"></p>
+                    </div>
+                    <div class="col">
+                        <h2>Calcular o Volume da Pirâmide</h2>
+                        <input type="number" id="ladopiram" placeholder="Digite o valor do lado da base">
+                        <input type="number" id="alturapira" placeholder="Digite o valor da altura">
+                        <button type="button" class="btn btn-secondary rounded-pill" onclick="piramide()">Calcular</button>
+                        <p id="areapiramide"></p>
+                    </div>
+                    
+                </div>
+                    
+                <div class="containergrau">
+                    <div class="row">
+                        <div class="col-1"></div>
+                        <div class="col">
+                            <h2>Calculadora de Equação do Segundo Grau</h2>
+                            <input type="number" id="A1" placeholder="valor a">
+                            <input type="number" id="B1" placeholder="valor b">
+                            <input type="number" id="C1" placeholder="valor c">
+                            <button type="button" class="btn btn-secondary rounded-pill" onclick="segundograu()">Calcular</button>
+                            <p id="segundograu"></p>
+                        </div>
+                        <div class="col-5"></div>
+        </div>
+        
+</div>
 </body>
 </html>
