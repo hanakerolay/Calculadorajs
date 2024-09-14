@@ -48,38 +48,46 @@ function paralelepípedo() {
 }
 
 function calcAreaesfera() {
-    let raio = document.getElementById("raio").value
-    const pi = 3.14
-    let calcAreaesfera = pi * raio**2 *1.3 
-    document.getElementById("calcAreaesfera").innerText = calcAreaesfera
+    let raio = Number(document.getElementById("esfera").value)
+    const pi = 3.14;
+    let Areaesfera = 4 * pi * (raio ** 2)
+    document.getElementById("calcAreaesfera").innerText = "A área da esfera é: " + Areaesfera.toFixed(2)
 }
 
 function calcAreaCilindro() {
-    let raio = document.getElementById("raio").value
-    const pi = 3.14
-    let calcAreaCilindro = pi * raio**2 *altura
-    document.getElementById("calcAreaCilindro").innerText = calcAreaCilindro
+    let raio = Number(document.getElementById("raioCilin").value)
+    let alturaCilin = Number(document.getElementById("alturaCilin").value)
+    const pi = 3.14;
+    let calcVolumeCilindro = pi * raio ** 2 * alturaCilin
+    document.getElementById("AreaCilin").innerText = `O volume do cilindro é: ${calcVolumeCilindro.toFixed(2)}`
 }
 
 function calcAreaCone() {
-    let raio = document.getElementById("raio").value
-    const pi = 3.14
-    let calcAreaCone = pi * raio**2 *altura
-    document.getElementById("calcAreaCone").innerText = calcAreaCone
+    let raiocon = Number(document.getElementById("raiocon").value)
+    let alturacon = Number(document.getElementById("alturacon").value)
+    const pi = 3.14;
+    let calcAreaCone = pi * raiocon ** 2 * alturacon * 0.33
+    document.getElementById("AreaCone").innerText = `O volume do Cone é: ${calcAreaCone.toFixed(2)}`
 }
 
 function piramide() {
-    let ladopiram= Number(document.getElementById("ladopiram").value)
-    let alturapira = Number(document.getElementById("alturapira").value)
-    let areadapiramide = (ladopiram**2 * alturapira)/3
-    document.getElementById("areadapiramide").innerText = areadapiramide
+    let ladoPiram = Number(document.getElementById("ladopiram").value);
+    let alturaPira = Number(document.getElementById("alturapira").value);
+    let volumePiramide = (ladoPiram ** 2 * alturaPira) / 3;
+    document.getElementById("areapiramide").innerText = `O volume da pirâmide é: ${volumePiramide.toFixed(2)}`;
 }
 
-function segungrau() {
-    let volume1 = Number(document.getElementById("volume1").value)
-    let volume2  = Number(document.getElementById("volume2").value)
-    let valor = Number(document.getElementById("valor").value)
-    
-    let Delta = volume1**2 - volume2 + valor
-    document.getElementById("Delta").innerText = Delta
+function segundograu() {
+    let valorA = Number(document.getElementById("A1").value);
+    let valorB = Number(document.getElementById("B1").value);
+    let valorC = Number(document.getElementById("C1").value);
+
+    let delta = (valorB ** 2) - (4 * valorA * valorC);
+    if (delta < 0) {
+        document.getElementById("segundograu").innerText = "A equação não possui raízes reais.";
+    } else {
+        let x1 = (-valorB + Math.sqrt(delta)) / (2 * valorA);
+        let x2 = (-valorB - Math.sqrt(delta)) / (2 * valorA);
+        document.getElementById("segundograu").innerText = "x1 = " + x1 + " -- " + "x2 = " + x2;
+    }
 }

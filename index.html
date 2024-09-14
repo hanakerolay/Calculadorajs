@@ -20,8 +20,8 @@
     <br>
     <br>
     <h2>Calcular area do Triângulo</h2>
-    <input type="number" name="basetri" id="basetri" placeholder="Digite o valor da base">
-    <input type="number" name="alturatri" id="alturatri" placeholder="Digite o valor da altura">
+    <input type="number" name="basetria" id="basetria" placeholder="Digite o valor da base">
+    <input type="number" name="alturatria" id="alturatria" placeholder="Digite o valor da altura">
     <button onclick="triangulo()">Calcular</button>
     <p id="areadotriangulo"></p>
     <br>
@@ -57,39 +57,41 @@
     <p id="areadoparalelepípedo"></p>
     <br>
     <br>
-    <h2>Calcular area do Esfera</h2>
-    <input type="text" nome="esfera" id="esfera" placeholder="Digite o valor do esfera">
+    <h2>Calcular área da Esfera</h2>
+    <input type="number" id="esfera" placeholder="Digite o valor do raio">
     <button onclick="calcAreaesfera()">Calcular</button>
-    <p is="calcAreaesfera"></p>
+    <p id="calcAreaesfera"></p>
     <br>
     <br>
-    <h2>Calcular area do  Cilindro</h2>
-    <input type="text" nome="esfera" id="esfera" placeholder="Digite o valor do cilindro">
+    <h2>Calcular o Volume do Cilindro</h2>
+    <input type="number" id="raioCilin" placeholder="Digite o valor do raio">
+    <input type="number" id="alturaCilin" placeholder="Digite o valor da altura">
     <button onclick="calcAreaCilindro()">Calcular</button>
-    <p is="calcAreaCilindro"></p>
+    <p id="AreaCilin"></p>
     <br>
     <br>
-    <h2>Calcular area do  Cone</h2>
-    <input type="text" nome="esfera" id="esfera" placeholder="Digite o valor do cilindro">
+    <h2>Calcular area do Cone</h2>
+    <input type="number" id="raiocon" placeholder="Digite o valor do raio">
+    <input type="number" id="alturacon" placeholder="Digite o valor da altura">
     <button onclick="calcAreaCone()">Calcular</button>
-    <p is="calcAreaCone"></p>
+    <p id="AreaCone"></p>
     <br>
     <br>
-    <h2>Calcular area do Pirâmide</h2>
-    <input type="number" name="ladopiram" id="ladopiram" placeholder="Digite o valor da lado maior">
-    <input type="number" name="alturapira" id="alturapira" placeholder="Digite o valor da altura">
-    <button onclick="Piramide()">Calcular</button>
-    <p id="areadapiramide"></p>
+    <h2>Calcular o Volume da Pirâmide</h2>
+    <input type="number" id="ladopiram" placeholder="Digite o valor do lado da base">
+    <input type="number" id="alturapira" placeholder="Digite o valor da altura">
+    <button onclick="piramide()">Calcular</button>
+    <p id="areapiramide"></p>
     <br>
     <br>
-    <h2>Calcular equaçao do segundo grau</h2>
-    <input type="number" name="volume1" id="volume1" placeholder="Digite o valor de a">
-    <input type="number" name="volume2" id="volume2" placeholder="Digite o valor de b">
-    <input type="number" name="valor" id="valor" placeholder="Digite o valor de c">
-    <button onclick="segungrau()">Calcular</button>
-    <p id="Delta"></p>
+    <h1>Calculadora de Equação do Segundo Grau</h1>
+    <input type="number" id="A1" placeholder="valor a">
+    <input type="number" id="B1" placeholder="valor b">
+    <input type="number" id="C1" placeholder="valor c">
+
+    <button onclick="segundograu()">Calcular</button>
+    <p id="segundograu"></p>
     <br>
     <br>
-    
 </body>
 </html>
