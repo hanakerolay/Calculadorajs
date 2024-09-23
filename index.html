@@ -24,7 +24,7 @@
                     <input type="number" name="baseret" id="baseret" placeholder="Digite o valor da base">
                     <input type="number" name="alturaret" id="alturaret" placeholder="Digite o valor da altura">
                     <button type="button" class="btn btn-secondary rounded-pill" onclick="retagulo()">Calcular</button>
-                   
+                
                     <p id="areadoretangulo"></p>
                 </div>
     
@@ -35,10 +35,9 @@
                     <button type="button" class="btn btn-secondary rounded-pill" onclick="triangulo()">Calcular</button>
                     <p id="areadotriangulo"></p>
                 </div>
-                     
+                
             </div> 
-       
-       
+        
             <div class="row">
                 <div class="col-1"></div>
                 <div class="col">
@@ -56,11 +55,10 @@
                         <button type="button" class="btn btn-secondary rounded-pill" onclick="trapezio()">Calcular</button>
                         <p id="areadotrapezio"></p>
                 </div>
-               
+            
             </div>
     </div>
     
-           
         <div class="container1">
             <h1>calculadora (volumes)</h1>
         </div>
@@ -131,7 +129,18 @@
                             <button type="button" class="btn btn-secondary rounded-pill" onclick="segundograu()">Calcular</button>
                             <p id="segundograu"></p>
                         </div>
-                        <div class="col-5"></div>
+                        
+
+                        <div class="col">
+                            <h2>Calculadora de Hipotenusa</h2>
+                            
+                            <input type="number" id="catetoOposto" placeholder="valor do cateto oposto">
+                            <input type="number" id="catetoAdjacente" placeholder="valor do cateto adjacente">
+
+                            <button type="button" class="btn btn-secondary rounded-pill" onclick="calcular()">Calcular</button>
+
+                            <p class="result" id="resultado"></p>
+                        </div>
         </div>
         
 </div>
