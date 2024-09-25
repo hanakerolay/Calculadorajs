@@ -59,7 +59,7 @@ function calcAreaCilindro() {
     let alturaCilin = Number(document.getElementById("alturaCilin").value)
     const pi = 3.14;
     let calcVolumeCilindro = pi * raio ** 2 * alturaCilin
-    document.getElementById("AreaCilin").innerText = `O volume do cilindro é: ${calcVolumeCilindro.toFixed(2)}`
+    document.getElementById("AreaCilin").innerText = "O volume do cilindro é: " + calcVolumeCilindro.toFixed(2)
 }
 
 function calcAreaCone() {
@@ -67,13 +67,13 @@ function calcAreaCone() {
     let alturacon = Number(document.getElementById("alturacon").value)
     const pi = 3.14;
     let calcAreaCone = pi * raiocon ** 2 * alturacon * 0.33
-    document.getElementById("AreaCone").innerText = `O volume do Cone é: ${calcAreaCone.toFixed(2)}`
+    document.getElementById("AreaCone").innerText = "O volume do Cone é: " + calcAreaCone.toFixed(2)
 }
 
 function piramide() {
     let ladoPiram = Number(document.getElementById("ladopiram").value);
     let alturaPira = Number(document.getElementById("alturapira").value);
     let volumePiramide = (ladoPiram ** 2 * alturaPira) / 3;
-    document.getElementById("areapiramide").innerText = `O volume da pirâmide é: ${volumePiramide.toFixed(2)}`;
+    document.getElementById("areapiramide").innerText = "O volume da pirâmide é: " + volumePiramide.toFixed(2)
 }
 
