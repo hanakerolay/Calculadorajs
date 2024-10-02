@@ -1,9 +1,25 @@
-function retagulo() {
-    let base = Number(document.getElementById("baseret").value)
-    let altura = Number(document.getElementById("alturaret").value)
-    let areadoretangulo = base * altura
-    document.getElementById("areadoretangulo").innerText = "O valor do retagulo é: " + areadoretangulo
+function retangulo() {
+    let base = Number(document.getElementById("baseret").value);
+    let altura = Number(document.getElementById("alturaret").value);
+    
+    // Loop while para garantir que os valores sejam válidos
+    while (base <= 0 || altura <= 0) {
+        alert("Valores inválidos! A base e a altura devem ser maiores que zero.");
+        
+        // Solicita novos valores
+        base = Number(prompt("Digite um valor válido para a base:"));
+        altura = Number(prompt("Digite um valor válido para a altura:"));
+        
+        // Atualiza os campos de entrada
+        document.getElementById("baseret").value = base;
+        document.getElementById("alturaret").value = altura;
+    }
+
+    // Calcula a área do retângulo
+    let areadoretangulo = base * altura;
+    document.getElementById("areadoretangulo").innerText = "O valor da área do retângulo é: " + areadoretangulo;
 }
+
 
 function triangulo() {
     let basetria = Number(document.getElementById("basetria").value)

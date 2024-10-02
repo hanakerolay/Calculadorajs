@@ -20,11 +20,15 @@
             <div class="row">
                 <div class="col-1"></div>
                 <div class="col">
-                    <h2>Calcular area do Retângulo</h2>
-                    <input type="number" name="baseret" id="baseret" placeholder="Digite o valor da base">
-                    <input type="number" name="alturaret" id="alturaret" placeholder="Digite o valor da altura">
-                    <button type="button" class="btn btn-secondary rounded-pill" onclick="retagulo()">Calcular</button>
-                
+                    
+
+                    <h2>Calcule Área do Retângulo</h2>
+
+                    <input type="number" id="baseret" min="0" step="0.01" placeholder="Digite o valor da base">
+                    <br><br>
+                    <input type="number" id="alturaret" min="0" step="0.01" placeholder="Digite o valor da altura">
+                    <br><br>
+                    <button type="button" class="btn btn-secondary rounded-pill" onclick="retangulo()">Calcular</button>
                     <p id="areadoretangulo"></p>
                 </div>
     
